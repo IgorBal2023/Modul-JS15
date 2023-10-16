@@ -84,22 +84,28 @@ body {
   width: 25vw;
   height: 95%;
 }
-p{
-    font-size: 1.5rem; 
-}
-/* li {
+li {
   font-size: 1.5rem;
   list-style-type: none;
-  padding: 5px;
-} */
+}
 .inputActionUser {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
   border: 1px solid red;
   width: 25vw;
   height: 95%;
+}
+.containerAction{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 40%;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 0 15px 0;
+  justify-content: space-around;
+  background-color: chartreuse;
 }
 #myInput {
   text-align: center;
@@ -108,6 +114,11 @@ p{
   font-size: 1.25rem;
 }
 #myButton {
+  width: 100px;
+  height: 50px;
+  border-radius: 25%;
+}
+#start{
   width: 100px;
   height: 50px;
   border-radius: 25%;
