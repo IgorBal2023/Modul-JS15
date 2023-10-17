@@ -62,13 +62,13 @@ body {
   justify-content: center;
   align-items: center;
   right: 0;
-  min-width: 80px;
-  height: 80px;
+  min-width: 60px;
+  height: 60px;
   margin: 10px;
   padding: 5px;
   color: gold;
   font-size: 2rem;
-  background-color: coral;
+  border: 3px solid coral;
 }
 .container {
   display: flex;
