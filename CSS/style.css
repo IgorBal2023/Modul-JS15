@@ -67,7 +67,8 @@ body {
   margin: 10px;
   padding: 5px;
   color: gold;
-  font-size: 2rem;
+  font-size: 2.7rem;
+  font-weight: bold;
   border: 3px solid coral;
 }
 .container {
@@ -75,14 +76,14 @@ body {
   justify-content: space-around;
   align-items: center;
   min-height: 85%;
-  background-color: aquamarine;
 }
 .keyWordAll {
   display: flex;
   justify-content: center;
-  border: 1px solid black;
   width: 25vw;
   height: 95%;
+  background-image: url(../img/whitenoutepade.jpg);
+  background-size: 100% 100%;
 }
 li {
   font-size: 1.5rem;
@@ -92,7 +93,6 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid red;
   width: 25vw;
   height: 95%;
 }
@@ -105,11 +105,10 @@ li {
   gap: 15px;
   padding: 15px 0 15px 0;
   justify-content: space-around;
-  background-color: chartreuse;
 }
 #myInput {
   text-align: center;
-  width: 80%;
+  width: 100%;
   min-height: 50px;
   font-size: 1.25rem;
 }
@@ -128,5 +127,7 @@ li {
   justify-content: center;
   width: 25vw;
   height: 95%;
-  border: 1px solid black;
+  background-image: url(../img/whitenoutepade2.jpg);
+  background-size: 100% 100%;
+
 }

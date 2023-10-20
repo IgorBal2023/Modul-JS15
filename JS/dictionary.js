@@ -1,0 +1,15 @@
+export const dictionary1 = {
+    how: "як",
+    where: "де",
+    when: "коли",
+    what: "що",
+    why: "чому",
+    which: "який",
+    i: "я",
+    you: "ти",
+    he: "він",
+    she: "вона",
+    it: "воно",
+    we: "ми",
+    they:"вони",
+  };
