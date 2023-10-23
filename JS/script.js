@@ -1,38 +1,47 @@
-import { dictionary1 } from "./dictionary.js";
+import { data } from "./dictionary.js";
 
 let randomKey;
-// функція, яка рандомно викликає та виводить ключі
-const keyFunction = () => {
-  const key = Object.keys(dictionary1);
-  randomKey = key[Math.floor(Math.random() * key.length)];
-  const keyWord = document.querySelector(".keyWordLi");
-
-  keyWord.insertAdjacentHTML("afterbegin", `<li>${randomKey}</li>`);
-};
-
 // DOM перетворення
+
+const start = document.getElementById("start");
 const answer = document.getElementById("myInput");
 const button = document.getElementById("myButton");
 const valueWord = document.querySelector(`.valueWord`);
-let score = document.querySelector(`.score`);
-valueWord.insertAdjacentHTML("beforeend", `<li>---</li>`);
+const score = document.querySelector(`.score`);
+score.innerText = 0;
+let number = 1;
+let dictionaryNumber = data[number]; // словники
+const level = document.querySelector(`.level`);
+level.innerText = `Level  `;
 
-// прив'язка до кнопки та вивод значення
-button.addEventListener(`click`, insertAnswer);
-answer.addEventListener(`keydown`, function (event) {
-  if (event.key === "Enter") {
-    button.click();
-  }
-});
 
+// функція, яка рандомно викликає та виводить ключі
+const keyFunction = () => {
+  const key = Object.keys(dictionaryNumber);
+  randomKey = key[Math.floor(Math.random() * key.length)];
+  const keyWord = document.querySelector(".keyWordLi");
+
+  level.innerText = `Level  ${number}`;
+  keyWord.insertAdjacentHTML("afterbegin", `<li>${randomKey}</li>`);
+};
+
+// вивод значення
 function insertAnswer() {
   const userAnswer = answer.value.trim();
   if (userAnswer !== "") {
-    valueWord.insertAdjacentHTML("afterend", `<li>${userAnswer}</li>`);
+    valueWord.insertAdjacentHTML("beforeend", `<li>${userAnswer}</li>`);
     answer.value = ""; //очищення ввода
     // порівняння відповіді та додавання очок
-    if (userAnswer.toLowerCase() === dictionary1[randomKey].toLowerCase()) {
+    if (
+      userAnswer.toLowerCase() === dictionaryNumber[randomKey].toLowerCase()
+    ) {
       score.innerText = String(parseInt(score.innerText) + 1);
+      if (parseInt(score.innerText) >= 10) {
+        number++;
+        score.innerText = 0;
+        dictionaryNumber = data[number];
+        clearOutput();
+      }
     } else {
       score.innerText = String(parseInt(score.innerText) - 1);
     }
@@ -41,6 +50,18 @@ function insertAnswer() {
     alert(`Введіть відповідь`);
   }
 }
-//start button
-const start = document.getElementById("start");
+//start button прив'язка до кнопки
 start.addEventListener(`click`, keyFunction, { once: true });
+button.addEventListener(`click`, insertAnswer);
+answer.addEventListener(`keydown`, function (event) {
+  if (event.key === "Enter") {
+    button.click();
+  }
+});
+// очищення на наступному рівні
+function clearOutput() {
+  const keyWord = document.querySelector(".keyWordLi");
+  const valueWord = document.querySelector(".valueWord");
+  keyWord.innerHTML = "";
+  valueWord.innerHTML = `<li class="firstString"> --- </li>`;// вирівнення строк
+  }

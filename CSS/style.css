@@ -55,6 +55,8 @@ body {
   align-items: center;
   width: 200px;
   height: 60px;
+  font-size: 2rem;
+  font-weight: bold;
   background-color: cornflowerblue;
 }
 .score {
@@ -130,4 +132,7 @@ li {
   background-image: url(../img/whitenoutepade2.jpg);
   background-size: 100% 100%;
 
+}
+.firstString{
+ opacity: 0;
 }
