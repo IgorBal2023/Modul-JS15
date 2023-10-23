@@ -136,3 +136,9 @@ li {
 .firstString{
  opacity: 0;
 }
+.correctAnswer{
+  color: green;
+}
+.inCorrectAnswer{
+  color: red;
+}
