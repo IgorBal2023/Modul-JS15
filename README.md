@@ -7,7 +7,7 @@ When you score 10 points, you move to the next level, with a more complex set of
 For whom:
 For those who want to repeat and expand their vocabulary in an unobtrusive manner
 
-Demo
+[Demo](https://igorbal2023.github.io/Modul-JS15/)
 --- 
 ## Tech stack
 - javascript   
@@ -27,6 +27,8 @@ This is the initial version.
 Для кого:
 Для тих, хто хоче повторювати та поповнювати словниковий запас у ненав'язливій формі.
 
+[Demo](https://igorbal2023.github.io/Modul-JS15/)
+--- 
 ## TODO  
 Це початкова версія.  
 - Планується розширення словників (може з граматикою),   
