@@ -49,7 +49,7 @@ function coinAnswer(userAnswer) {
       "afterend",
       `<li class="correctAnswer">${userAnswer}</li>`
     );
-    if (parseInt(score.innerText) >= 2) {
+    if (parseInt(score.innerText) >= 10) {
       number++;
       score.innerText = 0;
       dictionaryNumber = data[number];
