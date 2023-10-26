@@ -6,13 +6,13 @@ The essence of the game is that random English words are given and they must be 
 When you score 10 points, you move to the next level, with a more complex set of words.
 For whom:
 For those who want to repeat and expand their vocabulary in an unobtrusive manner
----
+
 Demo
 --- 
 ## Tech stack
 - javascript   
 - html/css
---- 
+
 ## TODO   
 This is the initial version.  
 - It is planned to expand the dictionaries (maybe with grammar),   
@@ -27,7 +27,7 @@ This is the initial version.
 При наборі 10 очок здійснюється перехід наступного рівня, з більш складним набором слів.
 Для кого:
 Для тих, хто хоче повторювати та поповнювати словниковий запас у ненав'язливій формі.
----
+
 TODO  
 Це початкова версія.  
 - Планується розширення словників (може з граматикою),   
