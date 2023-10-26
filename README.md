@@ -1,14 +1,19 @@
 # Modul-JS15
 ## Creating game "Translate", from English in Ukrainian.
+
 Description:  
 The essence of the game is that random English words are given and they must be translated into Ukrainian. If the answer is correct, the word is highlighted in green and a point is added; if not, it is colored red and written in a separate column.
 When you score 10 points, you move to the next level, with a more complex set of words.
 For whom:
 For those who want to repeat and expand their vocabulary in an unobtrusive manner
 ---
-
+Demo
 --- 
-TODO   
+## Tech stack
+- javascript   
+- html/css
+--- 
+## TODO   
 This is the initial version.  
 - It is planned to expand the dictionaries (maybe with grammar),   
 - add a transition to the dictionary,  
@@ -22,8 +27,6 @@ This is the initial version.
 При наборі 10 очок здійснюється перехід наступного рівня, з більш складним набором слів.
 Для кого:
 Для тих, хто хоче повторювати та поповнювати словниковий запас у ненав'язливій формі.
----
-
 ---
 TODO  
 Це початкова версія.  
