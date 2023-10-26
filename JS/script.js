@@ -47,7 +47,7 @@ function coinAnswer(userAnswer) {
       "afterend",
       `<li class="correctAnswer">${userAnswer}</li>`
     );
-    if (parseInt(score.innerText) >= 2) {
+    if (parseInt(score.innerText) >= 10) {
       keyWord.innerText = "--- Next level ---";
       keyWord.style.color = "lime";
       keyWord.style.fontSize = "2.3rem";
