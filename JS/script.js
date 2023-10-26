@@ -16,6 +16,8 @@ level.innerText = `Level  `;
 const errorWords = [];
 const errorArrow = document.querySelector(`.errorWordsUl`);
 
+
+
 // функція, яка рандомно викликає та виводить ключі
 const keyFunction = () => {
   const key = Object.keys(dictionaryNumber);
@@ -47,7 +49,7 @@ function coinAnswer(userAnswer) {
       "afterend",
       `<li class="correctAnswer">${userAnswer}</li>`
     );
-    if (parseInt(score.innerText) >= 10) {
+    if (parseInt(score.innerText) >= 2) {
       number++;
       score.innerText = 0;
       dictionaryNumber = data[number];
@@ -65,9 +67,24 @@ function coinAnswer(userAnswer) {
   keyFunction();
 }
 
-//start button прив'язка до кнопки
+//start button прив'язка до кнопки, анімація кнопок
 start.addEventListener(`click`, keyFunction, { once: true });
+start.addEventListener(`click`, () => {
+  (start.style.transform = `translateY(-3px)`),
+    (start.style.boxShadow = `0 3px 6px rgba(0, 0, 0, 0.1)`),
+    (start.style.backgroundColor = `lime`);
+});
 button.addEventListener(`click`, insertAnswer);
+button.addEventListener(`mousedown`, () => {
+  (button.style.transform = `translateY(-3px)`),
+    (button.style.boxShadow = `0 3px 6px rgba(0, 0, 0, 0.1)`),
+    button.style.backgroundColor = `	gainsboro`;
+});
+button.addEventListener(`mouseup`, () => {
+  (button.style.transform = `translateY(0px)`),
+    (button.style.boxShadow = `5px 5px 10px rgba(0, 0, 0, 0.7)`),
+    button.style.backgroundColor = `white`;
+});
 answer.addEventListener("keyup", function (event) {
   if (event.key === "Enter") {
     button.click();
