@@ -47,11 +47,20 @@ function coinAnswer(userAnswer) {
       "afterend",
       `<li class="correctAnswer">${userAnswer}</li>`
     );
-    if (parseInt(score.innerText) >= 10) {
-      number++;
-      score.innerText = 0;
-      dictionaryNumber = data[number];
-      clearOutput();
+    if (parseInt(score.innerText) >= 2) {
+      keyWord.innerText = "--- Next level ---";
+      keyWord.style.color = "lime";
+      keyWord.style.fontSize = "2.3rem";
+      setTimeout(function () {
+        number++;
+        score.innerText = 0;
+        dictionaryNumber = data[number];
+        keyWord.style.color = "black";
+        clearOutput();
+        keyFunction();
+      }, 2000);
+    } else {
+      keyFunction();
     }
   } else {
     score.innerText = String(parseInt(score.innerText) - 1);
@@ -61,8 +70,8 @@ function coinAnswer(userAnswer) {
     );
     errorWords.push(randomKey); //запис невірних відповідей
     errorArrowFoo();
+    keyFunction();
   }
-  keyFunction();
 }
 
 //start button прив'язка до кнопки, анімація кнопок
