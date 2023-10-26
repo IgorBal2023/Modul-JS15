@@ -16,8 +16,6 @@ level.innerText = `Level  `;
 const errorWords = [];
 const errorArrow = document.querySelector(`.errorWordsUl`);
 
-
-
 // функція, яка рандомно викликає та виводить ключі
 const keyFunction = () => {
   const key = Object.keys(dictionaryNumber);
@@ -78,12 +76,12 @@ button.addEventListener(`click`, insertAnswer);
 button.addEventListener(`mousedown`, () => {
   (button.style.transform = `translateY(-3px)`),
     (button.style.boxShadow = `0 3px 6px rgba(0, 0, 0, 0.1)`),
-    button.style.backgroundColor = `	gainsboro`;
+    (button.style.backgroundColor = `	gainsboro`);
 });
 button.addEventListener(`mouseup`, () => {
   (button.style.transform = `translateY(0px)`),
     (button.style.boxShadow = `5px 5px 10px rgba(0, 0, 0, 0.7)`),
-    button.style.backgroundColor = `white`;
+    (button.style.backgroundColor = `white`);
 });
 answer.addEventListener("keyup", function (event) {
   if (event.key === "Enter") {
