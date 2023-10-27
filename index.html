@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>"Translator"</title>
+    <link rel="stylesheet" href="./CSS/normalize.css" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <h1>Translate words from English into Ukrainian</h1>
+      </header>
+      <div class="container-wrapper">
+        <aside class="leftAsaide">
+          <div class="errorWord">
+            <h2>to study</h2>
+            <ul class="errorWordsUl"></ul>
+          </div>
+        </aside>
+        <aside class="rightAsaide"></aside>
+        <main class="main">
+          <div class="headerMain">
+            <div class="level"></div>
+            <div class="task">To go to the next level, collect 10 points</div>
+            <div class="scoreContainer">
+              Score:
+              <div class="score"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="keyWordAll">
+              <ul class="keyWord">
+                <li class="keyWordLi"></li>
+              </ul>
+            </div>
+            <div class="inputActionUser">
+              <div class="containerAction">
+                <input
+                  type="text"
+                  id="myInput"
+                  placeholder="Enter translate in Ukranian"
+                />
+                <button type="button" id="myButton">Add answer</button>
+                <button type="button" id="start">Start</button>
+              </div>
+            </div>
+            <div class="valueWordAll">
+              <ul class="valueWord">
+                <li class="firstString">---</li>
+              </ul>
+            </div>
+          </div>
+        </main>
+      </div>
+      <footer class="footer">
+        <p>&copy;2023. Kharkov, Ukraine. IgorBal2023.</p>
+      </footer>
+    </div>
+    <script type="module" src="./JS/dictionary.js"></script>
+    <script type="module" src="./JS/script.js"></script>
+  </body>
+</html>

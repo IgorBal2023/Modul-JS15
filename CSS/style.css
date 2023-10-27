@@ -1,0 +1,182 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url(../img/back1.jpg);
+  background-size: 100% 100%;
+}
+.header {
+  display: flex;
+  width: 100%;
+  color: aliceblue;
+  justify-content: center;
+}
+.container-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex: 1 1 auto;
+}
+.leftAsaide {
+  display: flex;
+  width: 13%;
+  order: 1;
+  justify-content: center;
+}
+.errorWord {
+  display: inline-block;
+  text-align: center;
+  width: 90%;
+  justify-content: center;
+  color: red;
+}
+.errorWord h2 {
+  text-decoration: underline;
+  color: rgb(255, 1, 1);
+  opacity: 0.4;
+}
+.errorWordsUl,
+.valueWord,
+.keyWord {
+  padding: 0;
+}
+.rightAsaide {
+  display: flex;
+  width: 13%;
+  order: 3;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 74%;
+  order: 2;
+}
+.footer {
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: aliceblue;
+}
+.headerMain {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+}
+.level {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 60px;
+  font-size: 2.7rem;
+  font-weight: bold;
+  color: gold;
+}
+.task {
+  text-align: center;
+  color: aliceblue;
+  font-size: 1.5rem;
+}
+.scoreContainer,
+.score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  min-width: 60px;
+  height: 60px;
+  margin: 10px;
+  padding: 5px;
+  color: gold;
+  font-size: 2.7rem;
+  font-weight: bold;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 85%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.keyWordAll {
+  display: flex;
+  justify-content: center;
+  width: 25vw;
+  height: 65vh;
+  background-image: url(../img/whitenoutepade.jpg);
+  background-size: 100% 100%;
+  padding: 5px;
+  overflow: hidden;
+}
+li {
+  font-size: 1.5rem;
+  list-style-type: none;
+}
+.inputActionUser {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25vw;
+  height: 95%;
+}
+.containerAction {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 40%;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 0 15px 0;
+  justify-content: space-around;
+}
+#myInput {
+  text-align: center;
+  width: 100%;
+  min-height: 50px;
+  font-size: 1.25rem;
+}
+#myButton {
+  width: 100px;
+  height: 50px;
+  border: none;
+  border-radius: 25%;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+#start {
+  width: 100px;
+  height: 50px;
+  border: none;
+  border-radius: 25%;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.valueWordAll {
+  display: flex;
+  justify-content: center;
+  width: 25vw;
+  height: 65vh;
+  background-image: url(../img/whitenoutepade2.jpg);
+  background-size: 100% 100%;
+  padding: 5px;
+  overflow: hidden;
+}
+.firstString {
+  opacity: 0;
+}
+.correctAnswer {
+  color: limegreen;
+}
+.inCorrectAnswer {
+  color: red;
+}
